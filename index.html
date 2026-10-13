@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayaji Express Logistics | Same-day delivery in Vadodara</title>
+<meta name="description" content="Same-day and express courier and delivery service across Vadodara, with live order tracking.">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><img src="images/logo.svg" alt="Sayaji Express Logistics logo" width="38" height="38"><span>Sayaji Express Logistics</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#dashboard">Dashboard</a><a href="#track">Track Order</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Your parcel, across Vadodara, the same day.</h1>
+    <p class="lead">Sayaji Express Logistics is a local delivery service that picks up and delivers parcels, documents and bulk orders within the city, and shows customers exactly where each one is.</p>
+    <div class="actions"><a class="btn primary" href="#track">Get Started</a><a class="btn ghost" href="#services">See services and prices</a></div>
+  </div>
+  <div class="route" aria-hidden="true">
+    <svg viewBox="0 0 520 330" role="img">
+      <path id="road" d="M50 270 C 140 270, 130 120, 240 150 S 380 260, 470 70" fill="none" stroke="#2D3A4A" stroke-width="22" stroke-linecap="round"/>
+      <path d="M50 270 C 140 270, 130 120, 240 150 S 380 260, 470 70" fill="none" stroke="#F2B705" stroke-width="3" stroke-dasharray="10 12" stroke-linecap="round"/>
+      <g font-family="Archivo,sans-serif" font-size="14" font-weight="700" fill="#F6F7F4">
+        <circle cx="50" cy="270" r="9" fill="#F6F7F4"/><text x="38" y="304">Pickup: Alkapuri</text>
+        <circle cx="240" cy="150" r="9" fill="#F6F7F4"/><text x="196" y="128">Hub: Makarpura</text>
+        <circle cx="470" cy="70" r="9" fill="#F2B705"/><text x="368" y="48">Drop: Gotri</text>
+      </g>
+      <g id="van"><rect x="-22" y="-13" width="32" height="22" rx="4" fill="#F2B705"/><rect x="10" y="-7" width="13" height="16" rx="3" fill="#F6F7F4"/><circle cx="-10" cy="11" r="5" fill="#12171F"/><circle cx="14" cy="11" r="5" fill="#12171F"/>
+        <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#road"/></animateMotion></g>
+    </svg>
+  </div>
+</section>
+
+<section id="about" class="block">
+  <h2>About the business</h2>
+  <div class="grid two">
+    <div>
+      <h3>What we do</h3><p>We collect parcels from homes, shops and offices and deliver them within Vadodara the same day. Every order gets an Order ID that customers can use to track it.</p>
+      <h3>Who we serve</h3><p>Small online sellers, local shops, offices sending documents, and families sending gifts or essentials across the city.</p>
+    </div>
+    <div>
+      <h3>Service area</h3><p>All of Vadodara city: Alkapuri, Akota, Gotri, Manjalpur, Makarpura, Fatehgunj, Karelibaug, and nearby areas up to the ring road.</p>
+      <h3>Why customers choose us</h3><p class="value">Same-day delivery with live tracking, at a fixed price that is known before booking.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="block alt">
+  <h2>Services and prices</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Service</th><th>Description</th><th>Price</th><th></th></tr></thead>
+    <tbody>
+      <tr><td>Local Delivery</td><td>Same-city delivery within the day</td><td>₹150</td><td><a href="#contact" data-service="Local Delivery">Book this</a></td></tr>
+      <tr><td>Express Delivery</td><td>Priority pickup, delivered within 3 hours</td><td>₹300</td><td><a href="#contact" data-service="Express Delivery">Book this</a></td></tr>
+      <tr><td>Bulk Delivery</td><td>10 or more packages in one booking</td><td>₹1,000</td><td><a href="#contact" data-service="Bulk Delivery">Book this</a></td></tr>
+      <tr><td>Document Courier</td><td>Letters and legal papers with signature on delivery</td><td>₹99</td><td><a href="#contact" data-service="Document Courier">Book this</a></td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Need a price for a regular monthly volume? <a href="#contact">Send us an enquiry</a>.</p>
+</section>
+
+<section id="dashboard" class="block dark">
+  <h2>Operations dashboard</h2>
+  <p class="sub">What the manager needs to know right now: how many orders, how many are late, and whether we have vehicles free.</p>
+  <div class="kpis">
+    <div class="kpi"><span>Total orders</span><b>1,250</b></div>
+    <div class="kpi"><span>Delivered</span><b>1,080</b></div>
+    <div class="kpi"><span>In transit</span><b>120</b></div>
+    <div class="kpi warn"><span>Delayed</span><b>50</b></div>
+    <div class="kpi"><span>On-time delivery</span><b>86.4%</b></div>
+    <div class="kpi"><span>Customer satisfaction</span><b>4.3 / 5</b></div>
+    <div class="kpi"><span>Vehicles available</span><b>18 of 24</b></div>
+    <div class="kpi"><span>Avg. delivery time</span><b>2 h 40 m</b></div>
+  </div>
+  <div class="grid two charts">
+    <div class="panel"><h3>Orders by day, this week</h3><div id="bars" class="bars" role="img" aria-label="Bar chart of delivered and delayed orders for each day of the week"></div>
+      <p class="legend"><i class="d"></i> Delivered <i class="x"></i> Delayed</p></div>
+    <div class="panel"><h3>Order status share</h3><div class="donut-row"><div class="donut" role="img" aria-label="Donut chart: 86.4% delivered, 9.6% in transit, 4% delayed"></div>
+      <ul class="legend-list"><li><i class="d"></i> Delivered 86.4%</li><li><i class="t"></i> In transit 9.6%</li><li><i class="x"></i> Delayed 4.0%</li></ul></div></div>
+  </div>
+  <p class="note"><a href="#track">Check a delayed order in Track Order</a></p>
+</section>
+
+<section id="track" class="block">
+  <h2>Track your order</h2>
+  <p class="sub">Enter your Order ID to see where your parcel is. Try <button class="chip" data-id="SEL1025">SEL1025</button> <button class="chip" data-id="SEL1031">SEL1031</button> <button class="chip" data-id="SEL1042">SEL1042</button> <button class="chip" data-id="SEL1017">SEL1017</button></p>
+  <form id="trackForm" class="track-form" novalidate>
+    <label for="orderId" class="sr">Order ID</label>
+    <input id="orderId" type="text" placeholder="Enter Order ID, for example SEL1025" autocomplete="off" required>
+    <button class="btn primary" type="submit">Track order</button>
+  </form>
+  <div id="result" class="result" aria-live="polite"></div>
+</section>
+
+<section id="contact" class="block alt">
+  <h2>Contact and enquiry</h2>
+  <div class="grid two">
+    <div class="contact-list">
+      <p><b>Email</b><br><a href="mailto:hello@sayajilogistics.in?subject=Delivery%20enquiry">hello@sayajilogistics.in</a></p>
+      <p><b>Phone</b><br><a href="tel:+919825012345">+91 98250 12345</a></p>
+      <p><b>Location</b><br>2nd Floor, Alkapuri Business Hub, Alkapuri, Vadodara, Gujarat 390007<br><a href="https://www.google.com/maps/search/?api=1&query=Alkapuri+Vadodara+Gujarat" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      <p><b>Hours</b><br>Monday to Saturday, 8 am to 8 pm</p>
+      <p><b>Industry links</b><br><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Our LinkedIn page</a><br><a href="https://pmgatishakti.gov.in/" target="_blank" rel="noopener">PM Gati Shakti portal (national logistics planning)</a></p>
+    </div>
+    <form id="enquiryForm" class="enquiry" novalidate>
+      <label>Your name<input name="name" type="text" required></label>
+      <label>Phone or email<input name="contact" type="text" required></label>
+      <label>Service<select name="service" id="serviceSelect"><option>Local Delivery</option><option>Express Delivery</option><option>Bulk Delivery</option><option>Document Courier</option></select></label>
+      <label>Message<textarea name="message" rows="3" placeholder="Pickup area, drop area and number of parcels"></textarea></label>
+      <button class="btn primary" type="submit">Send enquiry</button>
+      <p id="formMsg" class="form-msg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 Sayaji Express Logistics, Vadodara. A student project for Information Technology for Business Transformation.</p><a href="#home">Back to top</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
